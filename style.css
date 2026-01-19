@@ -40,7 +40,13 @@ hr {
     background-color: #4c287c4a;
     margin-top: 22px;
 }
-
+.section-title h2{
+    color: #ffff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
 /* Header Section Style */
 .header-top-menu{
@@ -180,8 +186,65 @@ button.top-btn {
     grid-template-columns: ;
 }
 
+/* Choose Section */
+
+#choose{
+    background-color: #230E3D;
+    padding: 120px 0;
+
+}
+
+.choose-card{
+    color: #ffff;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.large{
+    grid-column: span 2;
+
+}
+.medium{
+    grid-row: span 2;
+}
 
 
+.card-content{
+    background-color: #351165;
+    border-radius: 40px;
+    padding: 2rem;
+}
+
+
+
+.card-content img {
+    margin: 40px 0 16px 0px;
+}
+
+
+
+h4.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+p.card-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.item-content {
+    margin-top: 130px;
+}
+
+/* Featured Section css */
+#featured{
+    background-color: #1A0B2E;
+}
 
 
 
