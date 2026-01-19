@@ -191,6 +191,32 @@ button.top-btn {
     grid-template-columns: ;
 }
 
+.feature-card-content {
+    padding: 20px 24px;
+    color: #fff;
+}
+
+.feature-card-content {}
+
+.feature-video-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.fature-video-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.video-time {
+    color: #00FF88;
+    display: flex;
+    gap: 10px;
+}
+
 /* Choose Section */
 
 #choose,#featured{
@@ -265,7 +291,25 @@ p.card-text {
 .feature-card iframe {
     border-radius: 15px 15px 0 0;
 }
+.feature-card-content {
+    padding: 20px 24px;
+    color: #fff;
+}
 
+.feature-card-content {}
+
+h4.feature-video-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+p.fature-video-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
 /* Meet card section */
 .meet-card{
     background-color: #351165;
