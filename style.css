@@ -29,10 +29,20 @@
 }
 
 
-/* Header Section Style */
-header{
-    background-color: #1A0B2E;
+header,#about{
+    background-color: #1A0B2E ;
 }
+
+hr {
+    border: navajowhite;
+    width: 100%;
+    height: 2px;
+    background-color: #4c287c4a;
+    margin-top: 22px;
+}
+
+
+/* Header Section Style */
 .header-top-menu{
     padding-top: 36px;
 }
@@ -64,15 +74,12 @@ nav.navbar {
     text-decoration: none;
     color: #ffff;
     font-size: 16px;
-    font-weight: 500;}
-
-.header-top-menu hr {
-    border: navajowhite;
-    width: 100%;
-    height: 2px;
-    background-color: #4c287c;
-    margin-top: 22px;
+    font-weight: 500;
 }
+.hamburger-menu{
+    display: none;
+}
+
 /* Banner section */
 #banner{
     background-image: url('image/hero-bg.png');
@@ -132,7 +139,113 @@ button.top-btn {
 
 
 
+/* About Section */
+.about-podcast {
+    text-align: center;
+    color: #fff;
+}
+
+.about-podcast h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.about-text1,.about-text2{
+    line-height: 2rem;
+}
+.about-text2 {
+    line-height: 5rem;
+}
+
+
+.about-card {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    text-align: center;
+    padding: 80px 0;
+}
+.card h3 {
+    color: #00FF88;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.card p {
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 400;
+    grid-template-columns: ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Small Devices Responsive */
+@media screen and (max-width:576px) {
+    .display-none{
+    display: none;
+}
+#banner{
+    
+background-position: top center;
+    
+background-size: 126% 77%;
+}
+
+.hamburger-menu{
+    display: inline;
+    margin-right: 25px;
+}
+
+.banner-center-content{
+    max-width: 400px;
+}
+.logo{
+    padding: 0 10px;
+}
+img.circle {
+    width: 200px;
+}
+
+img.microphone {
+    width: 80px;
+    right: 112px;
+}
+span.badge {
+   
+    bottom: 172px;
+    right: 1px;
+}
+.about-card{
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.about-text1,.about-text2 {
+    line-height: 1.3rem;
+}
+.about-text2 {
+margin-top: 10px;
+}
+
+
+}
