@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
 
 
 .inter-font {
@@ -129,7 +129,7 @@ img.microphone {
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(53px, -50%);
+    transform: translate(50px, -50%);
 }
 
 
@@ -414,7 +414,6 @@ text-align: center;
 #banner{
     
 background-position: top center;
-    
 background-size: 126% 77%;
 }
 
@@ -433,7 +432,7 @@ img.circle {
     width: 200px;
 }
 
-img.microphone {
+.microphone {
     width: 80px;
     right: 112px;
 }
@@ -450,8 +449,75 @@ span.badge {
     line-height: 1.3rem;
 }
 .about-text2 {
-margin-top: 10px;
+    margin-top: 10px;
 }
+
+.section-title h2{
+    
+    font-size: 2rem;
+}
+.choose-card{
+    color: #ffff;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+.medium {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item-content{
+    margin: auto;
+}
+
+
+.feature-video {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+.feature-card iframe {
+    width: 100%;
+}
+    .meet-card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.card-social-icom {
+
+    justify-content: center;
+}
+
+
+.social-link {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.medium-m{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+
+
+}
+
+/* Medium Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+
+
+}
+
+/* Large Device */
+@media screen and (min-width:992px) {
+    
 
 
 }
