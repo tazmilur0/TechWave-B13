@@ -27,31 +27,15 @@
   to {left: 200px;}
 }
 
-@keyframes bounce {
-			0% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(50px);
-			}
-
-			100% {
-				transform: translateY(0);
-			}
+@keyframes bounce {			
+        50% {
+            transform: translateY(40px);
+        }
 }
 @keyframes bounce2 {
-			0% {
-				transform: translateY(0);
-			}
-
-			50% {
-				transform: translateY(10px);
-			}
-
-			100% {
-				transform: translateY(0);
-			}
+        50% {
+            transform: translateY(10px);
+        }
 }
 
 .container{
@@ -515,11 +499,12 @@ span.badge {
 }
 
 
-.feature-video {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr;
-}
+    .feature-video {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 
 .feature-card iframe {
     width: 100%;
