@@ -18,7 +18,42 @@
     background-image: linear-gradient(26deg, #F7E93F 14% ,#FB09B4 51% ,#9100F8 100%);
     border-radius: 50px;
     border: none;
+    animation: bounce2 2s infinite;
+    
 }
+ 
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+@keyframes bounce {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(50px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+}
+@keyframes bounce2 {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(10px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -111,6 +146,7 @@ nav.navbar {
 }
 .banner-top-img{
     position: relative;
+    animation: bounce 2s infinite;
 }
 span.badge{
     background-color: #07f366;
@@ -121,7 +157,8 @@ span.badge{
     right: 13px;
     border: navajowhite;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: uppercase;  
+    animation: bounce 2s infinite;
 }
 
 img.microphone {
@@ -284,13 +321,16 @@ p.card-text {
     margin-bottom: 12px;
 }
 .feature-card {
+    max-width: 380px;
     background-color: #250D44;
     border-radius: 15px;
     padding: 0 0px 38px 0px;
 }
 
 .feature-card iframe {
+    max-width: 380px;
     border-radius: 15px 15px 0 0;
+    width: 100%;
 }
 .feature-card-content {
     padding: 20px 24px;
@@ -515,13 +555,25 @@ footer {
 /* Medium Device */
 
 @media screen and (min-width:576px) and (max-width:992px){
+.feature-video {
+
+    grid-template-columns: repeat(2, 1fr);
+    justify-items:center;
+}
+
+
+
 
 
 }
 
+
+
+
+
 /* Large Device */
-@media screen and (min-width:992px) {
-    
+@media screen and (min-width:992px)  {
+
 
 
 }
