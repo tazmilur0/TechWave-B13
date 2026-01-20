@@ -4,10 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
-
-
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -47,10 +43,13 @@ hr {
     text-align: center;
     margin-bottom: 40px;
 }
+
 #meet,#choose,#featured,footer{
     padding: 120px 0;
 }
+
 /* Header Section Style */
+
 .header-top-menu{
     padding-top: 36px;
 }
@@ -129,11 +128,15 @@ img.microphone {
     position: absolute;
     top: 50%;
     right: 50%;
-    transform: translate(50px, -50%);
+    transform: translate(55px, -50%);
 }
 
 
-h1.banner_title {font-size: 3.9rem;font-weight: 800;padding: 40px 0 8px 0;}
+h1.banner_title {
+    font-size: 3.9rem;
+    font-weight: 800;
+    padding: 40px 0 8px 0;
+}
 
 p.banner-text {
     font-size: 1rem;
@@ -188,27 +191,6 @@ button.top-btn {
     color: #ffff;
     font-size: 1rem;
     font-weight: 400;
-    grid-template-columns: ;
-}
-
-.feature-card-content {
-    padding: 20px 24px;
-    color: #fff;
-}
-
-.feature-card-content {}
-
-.feature-video-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.fature-video-text {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 12px;
 }
 
 .video-time {
@@ -282,6 +264,25 @@ p.card-text {
     grid-template-columns: repeat(3,1fr);
 }
 
+.feature-card-content {
+    padding: 20px 24px;
+    color: #fff;
+}
+
+
+
+.feature-video-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.fature-video-text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
 .feature-card {
     background-color: #250D44;
     border-radius: 15px;
@@ -295,8 +296,6 @@ p.card-text {
     padding: 20px 24px;
     color: #fff;
 }
-
-.feature-card-content {}
 
 h4.feature-video-title {
     font-size: 1.5rem;
@@ -337,7 +336,7 @@ p.fature-video-text {
     margin-bottom: 16px;
 }
 
-.card-social-icom {
+.card-social-icon{
     display: flex;
     gap: 22px;
 }
@@ -408,13 +407,14 @@ text-align: center;
 
 /* Small Devices Responsive */
 @media screen and (max-width:576px) {
-    .display-none{
+
+.display-none{
     display: none;
 }
 #banner{
     
 background-position: top center;
-background-size: 126% 77%;
+background-size: 160% 77%;
 }
 
 .hamburger-menu{
@@ -432,9 +432,12 @@ img.circle {
     width: 200px;
 }
 
-.microphone {
+img.microphone {
     width: 80px;
-    right: 112px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(43px, -57px);
 }
 span.badge {
    
@@ -481,29 +484,30 @@ span.badge {
 .feature-card iframe {
     width: 100%;
 }
-    .meet-card {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
+.meet-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
-.card-social-icom {
+.card-social-icon {
 
     justify-content: center;
 }
-
-
 .social-link {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    margin: 24px 118px;
 }
 .medium-m{
     grid-column: span 2;
     grid-row: span 1;
 }
 
-
+footer {
+ background-size: 157% 100%;
+}
 
 
 }
